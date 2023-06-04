@@ -1,20 +1,20 @@
 {
-  "name": "clean-dev",
+  "name": "m2i-clean-dev",
   "version": "2023.5.0",
-  "description": "Clean Code course material (demo and docs)",
+  "description": "Clean Code course material (demo and docs) for M2i",
   "author": {
     "name": "Alberto Basalo",
     "email": "albertobasalo@hotmail.com",
     "url": "https://albertobasalo.dev"
   },
-  "homepage": "https://github.com/AlbertoBasalo/clean-dev#readme",
+  "homepage": "https://github.com/classroomLabs/m2i-clean-dev#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlbertoBasalo/clean-dev.git"
+    "url": "git+https://github.com/classroomLabs/m2i-clean-dev.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlbertoBasalo/clean-dev/issues"
+    "url": "https://github.com/classroomLabs/m2i-clean-dev/issues"
   },
   "scripts": {
     "prestart": "npm run build",

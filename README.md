@@ -1,5 +1,7 @@
 # Clean Code course material
 
+## M2i June 2023
+
 Demo project and documentation for the Clean Code course.
 
 > Clone, fork or use as a template repository for practicing.
