@@ -10,17 +10,3 @@ cs.forEach((c) => console.log("send invoices to", c));
 function customers() {
   return [];
 }
-
-// ✅
-// // 😏 well-named things always seem right
-// const customers = getCustomers();
-// const numberOfCustomers = customers.length;
-// for (i = 0; i < numberOfCustomers; i++) {
-//   // 😏 no doubt
-//   console.log("send invoices to", customers[i]);
-// }
-// // 😏 it is ok for immediate-use
-// customers.forEach((c) => console.log("send invoices to", c));
-// function getCustomers() {
-//   return [];
-// }

@@ -6,17 +6,3 @@ if (isNotEmpty === false) {
 } else {
   console.log("do something");
 }
-
-// ✅
-// const hasValue = Math.random() > 0.5;
-// // 😏 easy to read
-// if (hasValue) {
-//   console.log("do nothing");
-// } else {
-//   console.log("do something");
-// }
-// // Alternative for early returns
-// if (!hasValue) {
-//   console.log("returning...");
-// }
-// console.log("do something");

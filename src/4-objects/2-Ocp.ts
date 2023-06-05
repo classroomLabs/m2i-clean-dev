@@ -18,18 +18,3 @@ export class Payments {
 }
 
 // ✅
-export class CreditCardPayment {
-  pay(paymentInfo: any) {
-    // pay with credit card
-  }
-}
-export class BankTransferPayment {
-  pay(paymentInfo: any) {
-    // pay with bank transfer
-  }
-}
-export class PaypalPayment {
-  pay(paymentInfo: any) {
-    // pay with paypal
-  }
-}
