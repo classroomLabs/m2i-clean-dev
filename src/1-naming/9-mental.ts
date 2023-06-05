@@ -1,12 +1,15 @@
 // ❌
 // 🤢 a bad naming reminder
-const cs = customers();
-const cn = cs.length;
-for (let i = 0; i < cn; i++) {
+const customers = getCustomers();
+const customersLength = getCustomers.length;
+
+for (let i = 0; i < customersLength; i++) {
   // 🤢 what was cs meaning
-  console.log("send invoices to", cs[i]);
+  console.log("send invoices to", customers[i]);
 }
-cs.forEach((c) => console.log("send invoices to", c));
-function customers() {
+
+customers.forEach((c) => console.log("send invoices to", c));
+
+function getCustomers() {
   return [];
 }
