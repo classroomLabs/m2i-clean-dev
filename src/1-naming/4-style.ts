@@ -1,6 +1,7 @@
 // ❌
 const created_at = new Date(); // 🤢 avoid _symbols_
 const workingDays = 5; // 🤢 a const primitive is a CONSTANT
+
 function Calculate_payroll() {
   // 🤢 oh lord... Hell_case
 }
