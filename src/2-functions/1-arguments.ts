@@ -1,15 +1,16 @@
 // ❌
 function saveTripBooking(clientBooking: object, paymentData: object, confirmationMessage: object) {
-  // 🤢 make payment
+  // make payment
   console.log("making a payment with", paymentData);
-  // 🤢 save booking
+  // save booking
   console.log("saving booking", clientBooking);
-  // 🤢 send a confirmation email
+  // send a confirmation email
   console.log("sending a confirmation email", confirmationMessage);
 }
+function makePayment() {}
 
 // ❌
-function sendMessage(
+function sendMessageToPassenger(
   senderName: string,
   senderAddress: string,
   recipientAddress: string,
@@ -17,4 +18,11 @@ function sendMessage(
   body: string
 ) {
   // 🤢 multiple similar parameters are error-prone
+}
+class Message {
+  senderName: string = "";
+  senderAddress: string = "";
+  recipientAddress: string = "";
+  subject: string = "";
+  body: string = "";
 }

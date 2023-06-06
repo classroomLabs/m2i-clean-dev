@@ -24,6 +24,15 @@ export class Card {
   }
 }
 
+export class CardService {
+  isExpired(card: Card) {
+    return card.cardData.getExpirationDate() < new Date();
+  }
+  checkCardLimit(card: Card, amount: number) {
+    return true;
+  }
+}
+
 export class Payment {
   constructor(public readonly data: PaymentVO) {}
 

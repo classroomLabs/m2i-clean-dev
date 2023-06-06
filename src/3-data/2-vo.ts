@@ -1,11 +1,14 @@
 // ✅ Enforce invariant rules that ensure data quality
 
 class ClientVO {
+  // name: string = "";
+
   // 😏 immutable data
   constructor(public readonly name: string, public readonly country: string, public readonly city: string) {
     if (name.length < 3) {
       throw new Error("Name must be at least 3 characters");
     }
+    //this.name = name;
   }
 }
 
@@ -19,6 +22,7 @@ class PaymentVO {
     if (value < 0) {
       throw new Error("Amount must be greater than 0");
     }
+    this.validate();
     this._amount = value;
   }
   constructor(
@@ -28,10 +32,14 @@ class PaymentVO {
     public readonly isRecurredPayment: boolean
   ) {
     this.amount = amount;
-    if (isDeferredPayment && isRecurredPayment) {
+    this.validate();
+  }
+
+  private validate() {
+    if (this.isDeferredPayment && this.isRecurredPayment) {
       throw new Error("Payment can't be deferred and recurred");
     }
-    if (isDeferredPayment && monthsDeferred < 1) {
+    if (this.isDeferredPayment && this.monthsDeferred < 1) {
       throw new Error("Months deferred must be greater than 0");
     }
   }

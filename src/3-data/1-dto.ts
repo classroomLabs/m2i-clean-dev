@@ -1,20 +1,20 @@
 // ✅ interfaces, types, or classes bring cohesion
 
-interface ClientDTO {
-  name: string;
-  country: string;
-  city: string;
+class ClientDTO {
+  name: string = "";
+  country: string = "";
+  city: string = "";
 }
 
-interface PaymentDTO {
-  amount: number;
-  isDeferredPayment: boolean;
-  monthsDeferred: number;
-  isRecurredPayment: boolean;
+class PaymentDTO {
+  amount: number = 0;
+  isDeferredPayment: boolean = false;
+  monthsDeferred: number = 0;
+  isRecurredPayment: boolean = false;
 }
 
-interface CardDTO {
-  number: string;
-  validUntil: string;
-  verificationCode: number;
+class CardDTO {
+  number: string = "";
+  validUntil: string = "";
+  verificationCode: number = 0;
 }
