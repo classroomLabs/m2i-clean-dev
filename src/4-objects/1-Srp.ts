@@ -7,3 +7,10 @@ export class Bookings {
 }
 
 // ✅
+export class BookingsLogic {
+  booking: any;
+  create(activity: any, client: any, places: number) {}
+}
+export class BookingsData {
+  save(booking: any) {}
+}
