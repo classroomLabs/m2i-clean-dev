@@ -7,7 +7,7 @@ Minimum requirements for creating an activity:
 - A Title
 - A Date in the future
 - A non negative Price
-- A Status ("draft", "published", "confirmed", "cancelled", "finished"")
+- A Status ("draft", "published", "confirmed", "cancelled", "finished")
 - A maximum Capacity of 10
 - A minimum Quorum of 5
 
