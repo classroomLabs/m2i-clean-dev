@@ -13,8 +13,9 @@ Minimum requirements for creating an activity:
 
 ## Update an Activity State
 
-If is in the "draft" status can be changed to 'published'.
-When published allow to confirm or cancel, return to draft, mark as finished, etc
+If it is in the "draft" status can be changed to 'published'.
+When published allow to confirm, cancel, or return to draft.
+when confirmed you can mark it as finished, etc
 When finished or cancelled, cannot be changed.
 
 ## Book an Activity
