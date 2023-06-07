@@ -36,8 +36,7 @@ export class Nóminas {
     }
   }
   private obtenerTramo(salario: number): Tramo {
-    const byRango = (tramo: Tramo): boolean => salario >= tramo.desde && salario < tramo.hasta;
-    const tramo = this.tramos.find(byRango);
+    const tramo = this.tramos.find((tramo) => salario >= tramo.desde && salario < tramo.hasta);
     if (!tramo) {
       throw new Error(`No se ha encontrado un tramo para el salario ${salario}`);
     }
