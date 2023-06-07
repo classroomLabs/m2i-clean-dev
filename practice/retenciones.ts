@@ -24,7 +24,7 @@ export class Nóminas {
   getRetención(salario: number): number {
     this.validarSalario(salario);
     const tramo = this.obtenerTramo(salario);
-    return this.calcularRetención(salario, tramo);
+    return this.calcularRetención(salario, tramo.porcentaje);
   }
 
   private validarSalario(salario: number) {
@@ -42,7 +42,7 @@ export class Nóminas {
     }
     return tramo;
   }
-  private calcularRetención(salario: number, tramo: { desde: number; hasta: number; porcentaje: number }): number {
-    return salario * (tramo.porcentaje / 100);
+  private calcularRetención(salario: number, porcentaje: number) {
+    return salario * (porcentaje / 100);
   }
 }
