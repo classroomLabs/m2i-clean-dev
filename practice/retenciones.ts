@@ -1,5 +1,5 @@
 /**
- * Crear una clase nóminas con um método que calcule la retención de IRPF
+ * Crear una clase nóminas con un método que calcule la retención de IRPF
  * @description Recibirá el salario bruto anual y devolverá la retención
  * El cálculo es en base a la siguiente tabla de tramos:
  * 0 - 12450 19%
@@ -20,7 +20,6 @@ export class Nóminas {
     { desde: 60000, hasta: 300000, porcentaje: 45 },
     { desde: 300000, hasta: Infinity, porcentaje: 47 },
   ];
-
   getRetención(salario: number): number {
     this.validarSalario(salario);
     const tramo = this.obtenerTramo(salario);
